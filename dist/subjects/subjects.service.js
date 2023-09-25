@@ -30,7 +30,7 @@ let SubjectsService = class SubjectsService {
                 .createQueryBuilder('s')
                 .innerJoin('enrollment', 'e', 's.id = e."subjectId"')
                 .innerJoin('students', 'st', 'e."studentId" = st.id')
-                .select(['s.*'])
+                .select(['s.*', 'e.*'])
                 .where('e.status = :status AND st.id = :studentId', { status: 'Inscrito', studentId });
             const subjects = await query.getRawMany();
             if (!subjects || subjects.length === 0) {
@@ -49,7 +49,7 @@ let SubjectsService = class SubjectsService {
                 .createQueryBuilder('s')
                 .innerJoin('enrollment', 'e', 's.id = e."subjectId"')
                 .innerJoin('students', 'st', 'e."studentId" = st.id')
-                .select(['s.*'])
+                .select(['s.*', 'e.*'])
                 .where('e.score >= :score AND st.id = :studentId', { score: 3, studentId });
             const subjects = await query.getRawMany();
             if (!subjects || subjects.length === 0) {
@@ -68,7 +68,7 @@ let SubjectsService = class SubjectsService {
                 .createQueryBuilder('s')
                 .innerJoin('enrollment', 'e', 's.id = e."subjectId"')
                 .innerJoin('students', 'st', 'e."studentId" = st.id')
-                .select(['s.*'])
+                .select(['s.*', 'e.*'])
                 .where('e.score < :score AND st.id = :studentId', { score: 3, studentId });
             const subjects = await query.getRawMany();
             if (!subjects || subjects.length === 0) {

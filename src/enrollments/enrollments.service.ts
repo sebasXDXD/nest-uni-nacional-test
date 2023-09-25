@@ -74,7 +74,7 @@ export class EnrollmentsService {
       where: {
         student: { id: studentId },
         subject: { id: subjectId },
-        status: Not('Finalizado'), 
+        status: Not('Finalizada'), 
       },
     });
   

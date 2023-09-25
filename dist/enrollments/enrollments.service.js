@@ -67,7 +67,7 @@ let EnrollmentsService = class EnrollmentsService {
             where: {
                 student: { id: studentId },
                 subject: { id: subjectId },
-                status: (0, typeorm_1.Not)('Finalizado'),
+                status: (0, typeorm_1.Not)('Finalizada'),
             },
         });
         return enrollment;

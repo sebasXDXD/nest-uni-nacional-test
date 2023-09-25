@@ -41,33 +41,21 @@ $ yarn run start
 # watch mode
 $ yarn run start:dev
 
-# production mode
-$ yarn run start:prod
-```
 
-## Test
+
+😄 Aqui arriba estab los pasos para poder correr el proyecto todas las tablas se instalaran automaticamente 
+# Proyecto Uni Nacional
+
+😎 ¡Bienvenido al proyecto Uni Nacional! Aquí encontrarás una guía rápida para poner en marcha la aplicación y conocer sus características.
+
+## Instalación
+
+Antes de comenzar, asegúrate de tener la base de datos `uni_nacional_db` configurada y en funcionamiento. Puedes utilizar Docker para simplificar este proceso:
 
 ```bash
-# unit tests
-$ yarn run test
+# Ejecuta el proyecto en modo desarrollo con Docker
+$ docker compose up -d
 
-# e2e tests
-$ yarn run test:e2e
+😁También cuento con Swagger. La aplicación está disponible en [http://localhost:3000/api](http://localhost:3000/api), desde donde puedes explorar todos los endpoints de la API. Para realizar pruebas utilizando Postman, puedes importar la colección que he preparado. El archivo necesario se llama `uni_nacional_collection.postman_collection.json` y está ubicado en la carpeta raíz del proyecto. 
 
-# test coverage
-$ yarn run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+He hecho lo mejor que he podido con este proyecto y espero que les guste. Agradezco la oportunidad de haber sido tenido en cuenta y estoy listo para trabajar en más proyectos en el futuro. ¡Gracias!🚀🚀🚀🚀🚀🚀🚀🚀

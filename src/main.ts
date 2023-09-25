@@ -32,26 +32,3 @@ async function bootstrap() {
 }
 bootstrap();
 
-
-// import { ValidationPipe } from '@nestjs/common';
-// import { NestFactory } from '@nestjs/core';
-// import { AppModule } from './app.module';
-
-// async function bootstrap() {
-//   const app = await NestFactory.create(AppModule);
-
-//   // Configurar ValidationPipe con opciones
-//   app.setGlobalPrefix("api");
-//   app.useGlobalPipes(
-//     new ValidationPipe({
-//       transform: true, 
-//       whitelist: true, 
-//       forbidNonWhitelisted: true,
-//       validationError: { target: false, value: false }, 
-//     }),
-//   );
-
-//   await app.listen(3000);
-// }
-//bootstrap();
-
